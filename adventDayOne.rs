@@ -220,4 +220,17 @@ fn main() {
       }
     }
   }
+
+  for x in 1..v_len {
+    for y in x..v_len { 
+      for z in y..v_len{
+        if v[z] + v[x] + v[y]  == 2020{
+          println!("got it");
+          let answer = v[x] * v[y] * v[z];
+          println!("{}",answer)
+        }
+      }
+    }
+  }
+
 }
