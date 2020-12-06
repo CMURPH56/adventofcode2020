@@ -1,9 +1,4 @@
-fn main() {
-  // Statements here are executed when the compiled binary is called
-
-
-  let  input = 
-  "1728
+1728
   1621
   1856
   1683
@@ -202,35 +197,4 @@ fn main() {
   1782
   1523
   1245
-  1620";
-  
-  let split = input.lines();
-  let mut v = Vec::new();
-  for s in split {
-    let my_int: i32 = s.trim().parse().unwrap();
-    v.push(my_int)
-  }
-  let v_len = v.len();
-  for x in 1..v_len {
-    for y in x..v_len { 
-      if v[x] + v[y]  == 2020{
-        println!("got it");
-        let answer = v[x] * v[y];
-        println!("{}",answer)
-      }
-    }
-  }
-
-  for x in 1..v_len {
-    for y in x..v_len { 
-      for z in y..v_len{
-        if v[z] + v[x] + v[y]  == 2020{
-          println!("got it");
-          let answer = v[x] * v[y] * v[z];
-          println!("{}",answer)
-        }
-      }
-    }
-  }
-
-}
+  1620
